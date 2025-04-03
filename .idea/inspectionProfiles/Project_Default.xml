@@ -1,0 +1,67 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="46">
+            <item index="0" class="java.lang.String" itemvalue="tkdesigner" />
+            <item index="1" class="java.lang.String" itemvalue="Babel" />
+            <item index="2" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="3" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="4" class="java.lang.String" itemvalue="django-cassandra-engine" />
+            <item index="5" class="java.lang.String" itemvalue="docxcompose" />
+            <item index="6" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="7" class="java.lang.String" itemvalue="numpy" />
+            <item index="8" class="java.lang.String" itemvalue="requests" />
+            <item index="9" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="10" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="11" class="java.lang.String" itemvalue="darkdetect" />
+            <item index="12" class="java.lang.String" itemvalue="Pygments" />
+            <item index="13" class="java.lang.String" itemvalue="scylla-driver" />
+            <item index="14" class="java.lang.String" itemvalue="certifi" />
+            <item index="15" class="java.lang.String" itemvalue="graphviz" />
+            <item index="16" class="java.lang.String" itemvalue="lxml" />
+            <item index="17" class="java.lang.String" itemvalue="soupsieve" />
+            <item index="18" class="java.lang.String" itemvalue="urllib3" />
+            <item index="19" class="java.lang.String" itemvalue="djangorestframework" />
+            <item index="20" class="java.lang.String" itemvalue="itsdangerous" />
+            <item index="21" class="java.lang.String" itemvalue="Markdown" />
+            <item index="22" class="java.lang.String" itemvalue="Flask" />
+            <item index="23" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="24" class="java.lang.String" itemvalue="blinker" />
+            <item index="25" class="java.lang.String" itemvalue="python-docx" />
+            <item index="26" class="java.lang.String" itemvalue="customtkinter" />
+            <item index="27" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="28" class="java.lang.String" itemvalue="aniso8601" />
+            <item index="29" class="java.lang.String" itemvalue="tzdata" />
+            <item index="30" class="java.lang.String" itemvalue="asgiref" />
+            <item index="31" class="java.lang.String" itemvalue="et-xmlfile" />
+            <item index="32" class="java.lang.String" itemvalue="DocxTemplateManager" />
+            <item index="33" class="java.lang.String" itemvalue="chardet" />
+            <item index="34" class="java.lang.String" itemvalue="pandas" />
+            <item index="35" class="java.lang.String" itemvalue="DocxMerge" />
+            <item index="36" class="java.lang.String" itemvalue="docxtpl" />
+            <item index="37" class="java.lang.String" itemvalue="django-filter" />
+            <item index="38" class="java.lang.String" itemvalue="Django" />
+            <item index="39" class="java.lang.String" itemvalue="DecisionTreeClassifier" />
+            <item index="40" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="41" class="java.lang.String" itemvalue="pytz" />
+            <item index="42" class="java.lang.String" itemvalue="Flask-RESTful" />
+            <item index="43" class="java.lang.String" itemvalue="idna" />
+            <item index="44" class="java.lang.String" itemvalue="openpyxl" />
+            <item index="45" class="java.lang.String" itemvalue="Pillow" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="main.*" />
+          <option value="todo.list.models.views" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
