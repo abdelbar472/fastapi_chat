@@ -106,6 +106,30 @@ async def update_profile(
         file_path = await save_file(profile_image)
         current_user.profile_image = file_path
 
+    @router.post("/refresh")
+    async def refresh_token(refresh_token: str = Body(...), db: AsyncSession = Depends(get_auth_db)):
+        credentials_exception = HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Could not validate refresh token",
+        )
+        try:
+            payload = jwt.decode(refresh_token, SECRET_KEY, algorithms=[ALGORITHM])
+            if payload.get("type") != "refresh":
+                raise credentials_exception
+            email: str = payload.get("sub")
+            if email is None:
+                raise credentials_exception
+        except JWTError:
+            raise credentials_exception
+
+        result = await db.execute(select(User).filter(User.email == email))
+        user = result.scalars().first()
+        if user is None:
+            raise credentials_exception
+
+        new_access_token = create_access_token(data={"sub": user.email})
+        return {"access_token": new_access_token}
+
     await db.commit()
     await db.refresh(current_user)
     return {"message": "Profile updated successfully"}
