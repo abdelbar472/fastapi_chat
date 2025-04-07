@@ -2,9 +2,9 @@
 from fastapi import FastAPI
 from .auth.routers import router as auth_router
 from .auth.database import engine, Base
-from .message.routers import router as message_router
-from .message.database import shutdown_db, get_message_db
-from .message.models import init_message_db
+from .massage.routers import router as message_router
+from .massage.database import shutdown_db, get_message_db
+from .massage.models import init_message_db
 
 app = FastAPI()
 
